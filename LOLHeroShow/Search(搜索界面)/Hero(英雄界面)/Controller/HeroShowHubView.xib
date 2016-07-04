@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroShowHubView">
+            <connections>
+                <outlet property="allHero" destination="dpu-iT-qpV" id="xbq-Zf-hdf"/>
+                <outlet property="allHeroButton" destination="HgV-WC-q1N" id="zvg-U1-a5b"/>
+                <outlet property="myHero" destination="wKa-nl-B2X" id="cOs-B2-hXB"/>
+                <outlet property="myHeroButton" destination="mb7-tI-dKN" id="Vgb-tf-eoI"/>
+                <outlet property="scrollView" destination="khL-Jh-aVt" id="PiT-gE-hmQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weeklyButton" destination="8cG-HG-ihw" id="fFA-zA-3He"/>
+                <outlet property="weeklyHero" destination="m8s-9Q-fzs" id="Sjs-vc-xLn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="khL-Jh-aVt">
+                    <rect key="frame" x="0.0" y="101" width="414" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wKa-nl-B2X">
+                            <rect key="frame" x="0.0" y="42" width="378" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="scrollIndicatorInsets" minX="0.0" minY="-64" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="1W1-c4-CeP"/>
+                                <outlet property="delegate" destination="-1" id="U7X-cv-E9e"/>
+                            </connections>
+                        </tableView>
+                        <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="m8s-9Q-fzs">
+                            <rect key="frame" x="0.0" y="81" width="414" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="scrollIndicatorInsets" minX="0.0" minY="-64" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="SJ1-4T-sVN"/>
+                                <outlet property="delegate" destination="-1" id="Muw-70-n7M"/>
+                            </connections>
+                        </tableView>
+                        <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dpu-iT-qpV">
+                            <rect key="frame" x="0.0" y="103" width="414" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="scrollIndicatorInsets" minX="0.0" minY="-64" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="oEf-b9-k5V"/>
+                                <outlet property="delegate" destination="-1" id="hrT-4D-eQ0"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <animations/>
+                    <inset key="contentInset" minX="0.0" minY="-64" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="phm-6F-pvh"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" id="wdi-av-WHX">
+                    <rect key="frame" x="0.0" y="64" width="375" height="37"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mb7-tI-dKN">
+                            <rect key="frame" x="8" y="4" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <state key="normal" title="我的英雄"/>
+                            <connections>
+                                <action selector="myHeroButton:" destination="-1" eventType="touchUpInside" id="3S8-hN-kwL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8cG-HG-ihw">
+                            <rect key="frame" x="161" y="4" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <state key="normal" title="周免英雄"/>
+                            <connections>
+                                <action selector="weeklyHeroButton:" destination="-1" eventType="touchUpInside" id="RW0-Tm-mcD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HgV-WC-q1N">
+                            <rect key="frame" x="307" y="4" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <state key="normal" title="全部英雄"/>
+                            <connections>
+                                <action selector="allHeroButton:" destination="-1" eventType="touchUpInside" id="qcX-wB-Y25"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="58.5" y="77.5"/>
+        </view>
+    </objects>
+</document>
